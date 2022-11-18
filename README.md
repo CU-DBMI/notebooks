@@ -1,29 +1,32 @@
-# JupyterLite Demo
+# CU-DBMI Notebooks
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+Demonstrational and shareable Jupyter notebooks deployed using JupyterLite on Github Pages.
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+## Development
 
-## ✨ Try it in your browser ✨
+Development and deployment of this repo is assisted using Python [Poetry](https://python-poetry.org/docs/) as an environment and package dependency manager. Please ensure Poetry is installed in order to develop content related to this repo.
 
-➡️ **https://jupyterlite.github.io/demo**
+To create or modify Jupyter notebooks within this repo, use Jupyter via the Poetry configuration. For example
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+```shell
+# only required if the environment has not yet been installed
+poetry install
+# run jupyter lab, usually resulting in a browser window popping open
+poetry run jupyter lab
+```
 
-## Requirements
+To test your output to ensure it works with JupyterLite, reference the following example:
 
-JupyterLite is being tested against modern web browsers:
+```shell
+# only required if the environment has not yet been installed
+poetry install
+# run JupyterLite, reference the URL provided from the terminal to view the contents
+poetry run jupyter lite serve
+```
 
-- Firefox 90+
-- Chromium 89+
+## References
 
-## Deploy your JupyterLite website on GitHub Pages
+### JupyterLite
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
-
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+- How-to Guides: <https://jupyterlite.readthedocs.io/en/latest/howto/index.html>
+- Reference: <https://jupyterlite.readthedocs.io/en/latest/reference/index.html>
