@@ -16,4 +16,3 @@ jupyterlite = "0.1.0b14"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
