@@ -20,6 +20,8 @@ To test your output to ensure it works with JupyterLite, reference the following
 ```shell
 # only required if the environment has not yet been installed
 poetry install
+# build the JupyterLite content to be served
+poetry run jupyter lite build --contents content
 # run JupyterLite, reference the URL provided from the terminal to view the contents
 poetry run jupyter lite serve
 ```
